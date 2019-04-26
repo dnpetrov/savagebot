@@ -41,7 +41,7 @@ Currently supported dice codes are:
 
 `~r 3d6` - roll 3 6-sided dice, show sum
 
-`~r 2d8!` - roll 2 'exploding' 8-sided dice, show sum. 'Exploding' means that if die come up with maximum value - it will be rolled again and summed up 
+`~r 2d8!` - roll 2 'exploding' 8-sided dice, show sum. 'Exploding' means that if die come up with maximum argument - it will be rolled again and summed up
 
 `~r 4d6k3` - roll 4 6-sided dice keep 3 highest (DnD attributes roll-up)
 

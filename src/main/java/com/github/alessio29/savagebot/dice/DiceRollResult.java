@@ -103,6 +103,6 @@ public class DiceRollResult {
             }
             return;
         }
-        throw new ParseErrorException("Wrong sign: + or - expected, but " + sign + " ecountered!");
+        throw new ParseErrorException("Wrong sign: + or - expected, but " + sign + " encountered!");
     }
 }

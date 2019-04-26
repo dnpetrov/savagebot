@@ -4,8 +4,11 @@ import com.github.alessio29.savagebot.exceptions.WrongDieCodeException;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Random;
 
 public class Dice {
+
+    public static final Random RANDOM = new Random();
 
     public static DiceRollResult rollBasicDice(int count, int size, boolean explode) throws WrongDieCodeException {
 
@@ -40,7 +43,7 @@ public class Dice {
     }
 
     private static long roll(int size) {
-        return (long) (Math.random() * size) + 1;
+        return (long) RANDOM.nextInt(size) + 1;
     }
 
 

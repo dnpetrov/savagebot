@@ -18,6 +18,10 @@ public class Messages {
 
     private static final String BLOCK_MARKER = "```";
     private static final String QUOTE_MARKER = ">";
+    public static final String BOLD_MARKER = "**";
+    public static final String ITALIC_MARKER = "*";
+    public static final String UNDERLINED_MARKER = "__";
+    public static final String STRIKEOUT_MARKER = "~~";
 
     public static void sendMessage(User user, MessageChannel messageChannel, String message, boolean isPrivate) {
         if (isPrivate) {
@@ -35,19 +39,19 @@ public class Messages {
     }
 
     public static String bold(String message) {
-        return "**" + message + "**";
+        return BOLD_MARKER + message + BOLD_MARKER;
     }
 
     public static String italic(String message) {
-        return "*" + message + "*";
+        return ITALIC_MARKER + message + ITALIC_MARKER;
     }
 
     public static String underlined(String message) {
-        return "__" + message + "__";
+        return UNDERLINED_MARKER + message + UNDERLINED_MARKER;
     }
 
     public static String strikeout(String message) {
-        return "~~" + message + "~~";
+        return STRIKEOUT_MARKER + message + STRIKEOUT_MARKER;
     }
 
     public static String capitalize(String charName) {
